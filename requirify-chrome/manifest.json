@@ -16,7 +16,7 @@
     "default_title": "Requirify (Click to activate for this tab)"
   },
   "background": { "scripts": ["js/background.js"] },
-  "content_security_policy": "script-src 'self' https://s3.amazonaws.com/s3.mathisonian.com/javascripts/requirify-browser.js; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://raw.githubusercontent.com/Regala/requirify/master/requirify-browser.js; object-src 'self'",
   "permissions": [
     "tabs",
     "http://*/",
