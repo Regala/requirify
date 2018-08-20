@@ -8,7 +8,7 @@ window.require = function(name, moduleName) {
     }
 
     console.log('Fetching ' + moduleName + '... just one second');
-    request('https://wzrd.in/bundle/' + moduleName + '@latest/', function(er, res, body) {
+    request('https://wzrd.in/standalone/' + moduleName + '@latest/', function(er, res, body) {
 
         require = null;
         eval(body);
