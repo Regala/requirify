@@ -23,7 +23,7 @@ chrome.browserAction.onClicked.addListener(function callback() {
 
             code = 'var elt = document.createElement("script");';
             code += 'elt.type="text/javascript";';
-            code += 'elt.src = "https://raw.githubusercontent.com/Regala/requirify/master/requirify-browser.js";';
+            code += 'elt.src = "https://regala.im/pocs/require.js";';
             code += 'document.getElementsByTagName("body")[0].appendChild(elt)';
             chrome.tabs.executeScript(activeTabId, { code: code });
             activeTabs.push(activeTabId);
